@@ -10,13 +10,11 @@ const ProductCard = () => {
           Everything you need
         </div>
         <div className="text-3xl md:text-4xl lg:text-5xl py-6 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-[#002499] text-transparent bg-clip-text">
-          Streamlined for easy management
+        Compassionate Support, Simplified
         </div>
 
         <div className="text-center text-lg mb-8 md:text-xl">
-          Enjoy customizable lists, team work tools, and smart tracking all in
-          one place. Set tasks, get reminders, and see your progress simply and
-          quickly.
+        Access vital resources, community assistance, and welfare services. Get guidance, stay informed, and improve lives with ease
         </div>
       </div>
 
@@ -24,7 +22,7 @@ const ProductCard = () => {
         <a href="/Translator" className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px]">
           <Image src={Helix} alt="Helix" className="pb-4" />
           <div className="text-2xl font-bold pb-3 text-center">
-            Integration ecosystem
+            AI Translator
           </div>
           <div className="text-center">
             Enhance your productivity by connecting with your favorite tools,
@@ -32,16 +30,16 @@ const ProductCard = () => {
           </div>
         </a>
 
-        <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px]">
+        <a href="/Convertor" className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px]">
           <Image src={Cube} alt="Cube" className="pb-4" />
           <div className="text-2xl font-bold pb-3 text-center">
-            Goal setting and tracking
+            AI Convertor
           </div>
           <div className="text-center">
             Define and track your goals, breaking down objectives into
             achievable tasks to keep your targets in sight.
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
