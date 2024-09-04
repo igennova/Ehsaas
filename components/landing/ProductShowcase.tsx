@@ -1,6 +1,6 @@
 "use client";
 
-import ProductImage from "@/public/assests/Product Image.png";
+import ProductImage from "@/public/dev.png";
 import Pyramid from "@/public/assests/pyramid.png";
 import Tube from "@/public/assests/tube.png";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -28,16 +28,14 @@ const ProductShowcase = () => {
     >
       <div className="flex flex-col items-center font-medium mt-24 px-8 mx-auto md:w-[550px] lg:w-[630px]">
         <div className="border-2 w-fit p-0.5 px-3 text-sm rounded-xl border-slate-300/80">
-          Boost your productivity
+          Removing the Barrier
         </div>
         <div className="text-3xl md:text-4xl lg:text-5xl py-6 font-bold tracking-tighter text-center bg-gradient-to-b from-black to-[#002499] text-transparent bg-clip-text">
-          A more effective way to track progress
+        Empowering Lives with Compassion
         </div>
 
         <div className="text-center text-lg mb-8 md:text-xl">
-          Effortlessly turn your ideas into a fully functional, responsive,
-          no-code SaaS website in just minutes with the set of free components
-          for Framer.
+        Transforming visions of a brighter future into reality by providing essential support and care through our comprehensive welfare programs
         </div>
       </div>
       <div className="relative ">
@@ -49,7 +47,7 @@ const ProductShowcase = () => {
             translateY: translateY,
           }}
         />
-        <Image src={ProductImage} alt="Product Image" className="px-1" />
+        <Image src={ProductImage} alt="Product Image" className="px-1 rounded-xl" />
         <motion.img
           src={Tube.src}
           alt="Tube Image"
@@ -63,9 +61,9 @@ const ProductShowcase = () => {
       <div className="grid gap-8 sm:grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-4 px-20 max-w-[1400px] lg:px-28">
         <div className="mt-16">
           <LuLeaf className="text-2xl mb-3" />
-          <div className="font-bold text-2xl">Integrating You With ecosystem</div>
+          <div className="font-bold text-2xl">Empowering Communities</div>
           <div className="text-lg my-2">
-            Track your progress and motivate your efforts everyday.
+          Foster connections and drive positive change in vulnerable communities every day
           </div>
           <div className="text-lg font-medium">
             Learn more <FaArrowRight className="inline h-3 w-3" />
@@ -74,9 +72,9 @@ const ProductShowcase = () => {
 
         <div className="mt-16">
           <GoGoal className="text-2xl mb-3" />
-          <div className="font-bold text-2xl">Goal setting and tracking</div>
+          <div className="font-bold text-2xl">Targeted Courses & Support</div>
           <div className="text-lg my-2">
-            Set and track goals with manageable task breakdowns.
+          Strategically plan and execute outreach efforts to maximize impact
           </div>
           <div className="text-lg font-medium">
             Learn more <FaArrowRight className="inline h-3 w-3" />
@@ -85,9 +83,9 @@ const ProductShowcase = () => {
 
         <div className="mt-16">
           <MdLockOutline className="text-2xl mb-3" />
-          <div className="font-bold text-2xl">Secure data With encryption</div>
+          <div className="font-bold text-2xl">Future Proof Certifications</div>
           <div className="text-lg my-2">
-            Ensure data safety with encryption that helps more.
+          Maintain trust with secure and transparent processes that ensure accountability
           </div>
           <div className="text-lg font-medium">
             Learn more <FaArrowRight className="inline h-3 w-3" />
@@ -96,9 +94,9 @@ const ProductShowcase = () => {
 
         <div className="mt-16">
           <GoBell className="text-2xl mb-3" />
-          <div className="font-bold text-2xl">Customizable Healthy notifications</div>
+          <div className="font-bold text-2xl">Local Languages Support</div>
           <div className="text-lg my-2">
-            Get alerts on tasks and deadlines that matter most.
+          Stay informed with timely updates on the progress and success of our initiatives
           </div>
           <div className="text-lg font-medium">
             Learn more <FaArrowRight className="inline h-3 w-3" />
