@@ -72,6 +72,10 @@ body,
   }
 }
 
+.back {
+  background-image: url('../public/mute.jpg');
+}
+
 @layer base {
   * {
     @apply border-border;
