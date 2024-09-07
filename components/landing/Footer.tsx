@@ -1,69 +1,41 @@
-import Image from "next/image";
-import Logo from "@/public/assests/logo.png";
-import {
-  FaLinkedin,
-  FaPinterest,
-  FaTiktok,
-  FaXTwitter,
-  FaYoutube,
-} from "react-icons/fa6";
-import { AiFillInstagram } from "react-icons/ai";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import React from "react";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-black text-white p-16 gap-8 justify-between md:px-20 xl:px-44">
-      <div className="flex flex-col gap-8 text-gray-300/85 max-w-[300px]">
-        <Image src={Logo} alt="Logo" className="cursor-pointer" />
-        <div>
-          This site is developed under{" "}
-          <div className="font-semibold text-white hover:underline text-lg">
-            <a href="https://blox-doc.vercel.app">
-              BloxUI <MdOutlineArrowOutward className="inline" />
-            </a>
+    <div className="w-full h-fit bg-[#1d1f1e] text-zinc-200">
+      <div className="container md:flex-row flex flex-col py-10">
+        <div className="md:w-1/2 w-full flex flex-col gap-10 justify-between">
+          <h1 className="font-FoundersGroteskCondensed uppercase text-6xl font-semibold">
+            We'are- <br /> Here
+          </h1>
+          <h1 className="uppercase text-2xl">Ehsaas</h1>
+        </div>
+        <div className="md:w-1/2 w-full flex flex-col justify-between gap-5">
+          <div className="links flex flex-col font-NueueMontreal mt-10 md:mt-0">
+            <h1 className="font-NueueMontreal text-3xl md:text-4xl mb-4 border-b-[1px] border-zinc-700 pb-4">
+              Connect with us
+            </h1>
+            {["Facebook", "Twitter", "Instagram", "LinkedIn"].map(
+              (item, index) => (
+                <a
+                  className="flex items-center gap-2 underline underline-offset-4 decoration-slate-500"
+                  key={index}
+                >
+                  {item}{" "}
+                  <FaArrowUpLong className="rotate-45 origin-center translate-y-[2px] text-sm text-zinc-500" />
+                </a>
+              )
+            )}
+          </div>
+          <div className="flex justify-between font-NueueMontreal">
+            <p>© Ehsaas / SIH 2024</p>
+            <p>Made with &#9829; by 1Ratio1</p>
           </div>
         </div>
-        <div className="flex gap-4 text-2xl cursor-pointer">
-          <FaXTwitter className="hover:scale-125" />
-          <AiFillInstagram className="hover:scale-125" />
-          <FaPinterest className="hover:scale-125" />
-          <FaLinkedin className="hover:scale-125" />
-          <FaTiktok className="hover:scale-125" />
-          <FaYoutube className="hover:scale-125" />
-        </div>
-      </div>
-      <div className="flex flex-col gap-4">
-        <div className="font-bold text-lg">Product</div>
-        <div className="cursor-pointer text-gray-300/85">Features</div>
-        <div className="cursor-pointer text-gray-300/85">Integrations</div>
-        <div className="cursor-pointer text-gray-300/85">Updates</div>
-        <div className="cursor-pointer text-gray-300/85">FAQ</div>
-        <div className="cursor-pointer text-gray-300/85">Pricing</div>
-      </div>
-      <div className="flex flex-col gap-4">
-        <div className="font-bold text-lg">Company</div>
-        <div className="cursor-pointer text-gray-300/85">About</div>
-        <div className="cursor-pointer text-gray-300/85">Blog</div>
-        <div className="cursor-pointer text-gray-300/85">Careers</div>
-        <div className="cursor-pointer text-gray-300/85">Manifesto</div>
-        <div className="cursor-pointer text-gray-300/85">Press</div>
-        <div className="cursor-pointer text-gray-300/85">Contact</div>
-      </div>
-      <div className="flex flex-col gap-4">
-        <div className="font-bold text-lg">Resources</div>
-        <div className="cursor-pointer text-gray-300/85">Examples</div>
-        <div className="cursor-pointer text-gray-300/85">Community</div>
-        <div className="cursor-pointer text-gray-300/85">Guides</div>
-        <div className="cursor-pointer text-gray-300/85">Docs</div>
-      </div>
-      <div className="flex flex-col gap-4">
-        <div className="font-bold text-lg">Legal</div>
-        <div className="cursor-pointer text-gray-300/85">Privacy </div>
-        <div className="cursor-pointer text-gray-300/85">Terms</div>
-        <div className="cursor-pointer text-gray-300/85">Security</div>
       </div>
     </div>
   );
-};
+}
 
 export default Footer;

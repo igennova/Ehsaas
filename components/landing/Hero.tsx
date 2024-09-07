@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
 
           <div className="flex items-center text-center justify-center gap-3 mt-6 text-lg">
-            <Button text="Get for free" />
+            <a href="/dictionary">Start Learning</a>
             <div className="cursor-pointer hover:underline">
               Learn more
               <FaArrowRight className="h-3 w-3 inline ml-2" />

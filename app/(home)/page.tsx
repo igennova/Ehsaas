@@ -3,11 +3,13 @@ import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
+import Marquee from "@/components/landing/Marquee"
 import Pricing from "@/components/landing/Pricing";
-import ProductCard from "@/components/landing/ProductCard";
+import Eyes from "@/components/landing/Eyes"
 import ProductShowcase from "@/components/landing/ProductShowcase";
 import Testimonials from "@/components/landing/Testimonials";
 import Toopbar from "@/components/layout/Toopbar";
+import ProductCard from "@/components/landing/ProductCard";
 
 export default function Home() {
   return (
@@ -15,10 +17,12 @@ export default function Home() {
       <Hero/>
       <BrandSlide/>
       <ProductShowcase/>
+      {/* <Marquee /> */}
+      <Eyes />
       <ProductCard />
       {/* <Pricing/>
       <Testimonials/> */}
-      <CTA/>
+      {/* <CTA/> */}
       <Footer/>
     </div>
   );
