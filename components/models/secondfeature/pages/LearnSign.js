@@ -1,5 +1,6 @@
 "use client"
 
+import 'regenerator-runtime/runtime';
 import './Learnsign.css'
 import React, { useState, useEffect, useRef } from "react";
 import Slider from 'react-input-slider';

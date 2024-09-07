@@ -1,6 +1,7 @@
 import Helix from "@/public/assests/cube-helix 1.png";
 import Cube from "@/public/assests/cube-helix.png";
 import Image from "next/image";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const ProductCard = () => {
   return (
@@ -41,6 +42,10 @@ const ProductCard = () => {
           </div>
         </a>
       </div>
+      <a href="/data" className="m-auto mt-12 rounded-full flex gap-2 justify-center w-fit bg-blue-950 font-NueueMontreal text-zinc-200 px-10 py-3 text-sm tracking-wider uppercase">
+        Learn Sign Language
+        <FaArrowUpLong className="rotate-45 origin-center translate-y-[2px]" />
+      </a>
     </div>
   );
 };

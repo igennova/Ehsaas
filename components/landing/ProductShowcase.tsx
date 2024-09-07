@@ -108,7 +108,7 @@ const ProductShowcase = () => {
 };
 
 export default ProductShowcase;
- */
+*/
 
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
