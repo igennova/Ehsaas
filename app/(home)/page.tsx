@@ -15,7 +15,7 @@ export default function Home() {
       <Hero/>
       <BrandSlide/>
       <ProductShowcase/>
-      <ProductCard/>
+      <ProductCard />
       {/* <Pricing/>
       <Testimonials/> */}
       <CTA/>

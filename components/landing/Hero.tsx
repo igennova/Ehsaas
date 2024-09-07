@@ -20,24 +20,24 @@ const Hero = () => {
 
   return (
     <section
-      style={{
+      /* style={{
         backgroundImage: `url('mute.jpg')`,
-      }}
+      }} */
       ref={heroRef}
       className="bg-cover bg-center bg-no-repeat relative p-8 pb-16 md:p-10 lg:p-20 font-medium overflow-x-clip md:items-center gap-3 h-[75vh]"
     >
-      {/* <video
+      <video
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
         src="main.mp4" // Update the path to your video file
         autoPlay
         muted
         loop
         playsInline
-      ></video> */}
+      ></video>
 
       <div className="md:flex justify-center gap-16 items-center text-center relative z-10">
         <div className="md:w-[690px] mx-auto">
-          <div className="text-5xl md:text-7xl w-full font-black my-7 text-blue-950/80 bg-clip-text tracking-tighter">
+          <div className="text-5xl md:text-7xl w-full font-black my-7 text-white/50 stroke-black stroke bg-clip-text tracking-tighter">
             Empowering Voices, Bridging Silence
           </div>
           <div className="text-xl lg:text-2xl tracking-tighter opacity-85">
