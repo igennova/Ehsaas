@@ -29,8 +29,8 @@ const Footer = () => {
             )}
           </div>
           <div className="flex justify-between font-NueueMontreal">
-            <p>© Ehsaas / SIH 2024</p>
-            <p>Made with &#9829; by 1Ratio1</p>
+            <p>© Ehsaas / T-LAKS 2024</p>
+            <p>Made with &#9829; by T-LAKS</p>
           </div>
         </div>
       </div>
