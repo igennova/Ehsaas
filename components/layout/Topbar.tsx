@@ -25,7 +25,7 @@ const Topbar = () => {
   const topRoutes = [
     { label: "Instructor", path: "/instructor/courses" },
     { label: "Courses", path: "/main" },
-    { label: "Learning", path: "/learning" },
+    { label: "Learning", path: "/" },
     { label: "Draw Tool", path: "/Draw" },
   ];
 
