@@ -1,4 +1,6 @@
-"use client";
+"use client"
+
+/* "use client";
 
 import logo_acme from "@/public/assests/logo-acme.png";
 import logo_apex from "@/public/assests/logo-apex.png";
@@ -51,5 +53,73 @@ const BrandSlide = () => {
     </div>
   );
 };
+
+export default BrandSlide;
+ */
+
+import React from "react";
+import { motion } from "framer-motion";
+
+const BrandSlide = () => {
+  return (
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.1"
+      className="w-full py-8 rounded-b-3xl text-blue-950 bg-white/50"
+    >
+      <div className="font-semibold text-4xl leading-none uppercase border-zinc-400 flex whitespace-nowrap overflow-hidden">
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+        <motion.h1
+          initial={{ x: 0 }}
+          animate={{ x: "-100%" }}
+          transition={{ ease: "linear", repeat: Infinity, duration: 5 }}
+          className="font-FoundersGroteskCondensed pr-4"
+        >
+          The Ehsaas you Need •
+        </motion.h1>
+      </div>
+    </div>
+  );
+}
 
 export default BrandSlide;

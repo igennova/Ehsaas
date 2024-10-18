@@ -124,7 +124,7 @@ const EditCourseForm = ({
         </div>
       </div>
 
-      <Form {...form}>
+      <Form {...form}> 
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField
             control={form.control}
@@ -266,7 +266,7 @@ const EditCourseForm = ({
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  Price <span className="text-red-500">*</span> (USD)
+                  Price <span className="text-red-500">*</span> (INR)
                 </FormLabel>
                 <FormControl>
                   <Input

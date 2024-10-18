@@ -4,6 +4,7 @@ import { Course } from "@prisma/client";
 import { Gem } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { title } from "process";
 
 const CourseCard = async ({ course }: { course: Course }) => {
   const instructor = await clerkClient.users.getUser(course.instructorId);
@@ -59,7 +60,7 @@ const CourseCard = async ({ course }: { course: Course }) => {
           )}
         </div>
 
-        <p className="text-sm font-bold">$ {course.price}</p>
+        <p className="text-sm font-bold">₹{course.price}</p>
       </div>
     </Link>
   );
